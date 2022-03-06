@@ -21,11 +21,13 @@ const Form = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        create(data);
+        const serverResponse = create(data);
+        serverResponse.then(response => console.log("create:", response));
+        e.target.reset();
         // console.log("sended data");
         // navigate("/movies");
         // console.log("redirected");
-        window.location.reload(false);
+        // window.location.reload(false);
     }
 
     return (

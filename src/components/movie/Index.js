@@ -30,7 +30,7 @@ const Index = () => {
                 </td>
                 */}
                 <td>
-                    <Link to={"/movies/" + item.id} className="btn btn-info" />
+                    <Link to={"/movies/" + item.id} className="btn btn-info" >Edit</Link>
                 </td>
                 <td><Delete id={item.id} /></td>
             </tr>
